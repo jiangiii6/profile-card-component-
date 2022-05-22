@@ -1,0 +1,128 @@
+body{
+    background-color:hsl(185, 75%, 39%);
+    font-family:"Kumbh Sans";
+    margin:0;
+    /* must set margin to 0, otherwise it will have a default margin value, which led a gap between the bg-bottom image and bottom */
+
+}
+
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.bg-top{
+    position: absolute; 
+    /* not relative position */
+    background-image: url(./images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position:bottom right; 
+    /* set height first, then the image will show, then adjust the width */
+    height: 50vh;
+    width: 50vw;
+    top:0;
+    left:0; 
+}
+
+
+.bg-bottom{
+    position:absolute;
+    background-image: url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position:top left; 
+    height:50vh;
+    width:50vw;
+    right:0;
+    bottom:0;
+} 
+
+.card{
+    
+    /* display: flex;
+    justify-content: center; */
+    /* background-image: url(./images/bg-pattern-card.svg); */
+    background-color: white;
+    border-radius: 5%;
+    max-height: 30rem;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+.card .profile-picture{
+    margin-top: -4rem;
+    border:5px solid white;
+    border-radius: 50%;
+}
+
+
+
+
+.middle{
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.title{
+    font-weight: 700;
+    font-size: large;
+}
+
+.add{
+    color:hsl(227, 10%, 46%);
+    margin-left: 0.5rem;
+}
+
+.place{
+    color: hsl(227, 10%, 46%);
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.num{
+    display: inline-block;
+    color:hsl(229, 23%, 23%);
+    
+}
+
+
+.bottom{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.name{
+    color:hsl(227, 10%, 46%);
+    margin-top: -0.8rem;
+    font-size: small;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
